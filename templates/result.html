@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+{% endblock head %}
+{% block css %}
+body{
+background: #fec107;
+padding: 0 20 px;
+
+}
+
+h1{
+text-align:center;
+background-color:white;
+}
+nav
+{
+overflow: auto;
+}
+p{
+text-align:left;
+background-color:white;
+
+}
+
+
+{% endblock css %}
+{% block body %}
+<div style="background-color: rgb(197, 124, 128); height: 100vh; text-align: center; padding: 8px;">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- {{x}} -->
+
+
+
+    <h1 style="background-color: aliceblue;">{{x}}</h1><br>
+
+    <div class="suggestion">
+        <br>
+        <br>
+        <h2>Suggestion</h2>
+
+        <p style="background-color: aliceblue;">{{t}}<br></p>
+        <br>
+        <h2>Diet</h2>
+        <p style="background-color: aliceblue;">{{u}}<br></p>
+        <br>
+        <h2>Lifestyle Modification</h2>
+        <p style="background-color: aliceblue;">{{v}}<br></p>
+        <br>
+        <h2>Prescibed Medicines</h2>
+        <p style="background-color: aliceblue;">{{w}}<br></p>
+
+    </div>
+</div>
+{% endblock body %}
